@@ -61,3 +61,46 @@ h3{
   font-size: 52px;
   color: #D41876;
 }
+
+.what-what{
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.what-lists{
+  display: flex;
+  justify-content: space-around;
+}
+
+.what-list{
+  width: 30%;
+  background-color: #f6efdb;
+}
+
+.what-img{
+  width: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+
+h4{
+  text-align: center;
+  font-size: 24px;
+}
+
+.cando-index{
+  width: 80%;
+  margin: 0 auto;
+  border: solid;
+}
+
+.cando-list{
+  border: solid;
+  width: 20%;
+}
+
+.cando-image{
+  width: 100%;
+}

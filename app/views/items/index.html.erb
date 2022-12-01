@@ -13,17 +13,47 @@
           <p class="what_cando_text">コーチや、練習相手、試合要員など<br>
           使い方は様々!
           </p>
-
         </div>
         <div class="what_right">
         <%= image_tag "/assets/coaching.jpeg", class:"coach" %>
-
         </div>
       </div>
       <%= link_to 'あなたのCanDoを登録する', new_item_path, class: "new_cando" %>
     </div>
-    <h2>Wantとは？</h2>
+    <div class="what-what">
+      <h2>Wantとは？</h2>
+      <ul class="what-lists">
+        <li class="what-list">
+          <%= image_tag "/assets/look-phone.png", class:"what-img" %>
+          <h4>Candoを探す</h4>
+        </li>
+        <li class="what-list">
+          <%= image_tag "/assets/look-phone.png", class:"what-img" %>
+         <h4>Wantを見つける</h4>
+        </li>
+        <li class="what-list">
+          <%= image_tag "/assets/look-phone.png", class:"what-img" %>
+         <h4>希望条件を確認後、マッチング</h4>
+        </li>
+      </ul>
+    </div>
+    <div class="cando-index">
+      <h2>CanDo一覧を見る</h2>
+      <ul class='cando-lists'>
+        <% @items.each do |item|%>
+          <li class=cando-list>
+            <%= image_tag item.image.variant(resize: '300x200'), class: 'cando-image' if item.image.attached? %>
+            <%= item.title%>
+            <%= item.subtitle%>
+            <%= item.date%>
+            <%= item.price%>円/1時間
+          </li>
+        <% end %>
+      </ul>
+    </div>
 
 
+
+  </div>
 <%= render "shared/footer" %> 
 
