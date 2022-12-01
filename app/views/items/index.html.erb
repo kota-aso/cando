@@ -1,0 +1,29 @@
+<%= render "shared/header" %>
+
+  <%= link_to image_tag("CanDo TOP.png", class:"main-top"), "#" %>
+    <div class="what_cando">
+      <h2>CanDoとは？</h2>
+      <div class="what_main">
+        <div class="what_left">
+          <h3>あなたの 'I <span class="strong">CanDo</span> it!'を<br>
+          <span class="strong">'Want'</span>する人のもとへ</h3>
+          <p class="what_cando_text">スポーツのスキルを商品に<br>
+          スポーツ選手のマッチングサービスアプリ</p>
+
+          <p class="what_cando_text">コーチや、練習相手、試合要員など<br>
+          使い方は様々!
+          </p>
+
+        </div>
+        <div class="what_right">
+        <%= image_tag "coaching.jpeg", class:"coach" %>
+
+        </div>
+      </div>
+      <%= link_to 'あなたのCanDoを登録する', new_item_path, class: "new_cando" %>
+    </div>
+    <h2>Wantとは？</h2>
+
+
+<%= render "shared/footer" %> 
+
